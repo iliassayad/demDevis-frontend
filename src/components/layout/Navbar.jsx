@@ -5,7 +5,6 @@ import {
   FiHome, 
   FiUsers, 
   FiFileText, 
-  FiBarChart2, 
   FiMenu,
   FiX,
   FiTruck
@@ -36,13 +35,6 @@ const CustomNavbar = () => {
       path: '/devis',
       label: 'Devis',
       icon: FiFileText,
-      badge: 'Nouveau'
-    },
-    {
-      path: '/analytics',
-      label: 'Analytics',
-      icon: FiBarChart2,
-      badge: null
     }
   ];
 
@@ -124,18 +116,8 @@ const CustomNavbar = () => {
             {/* Desktop Actions */}
             <Nav className="align-items-center">
               <div className="d-flex align-items-center gap-3">
-                {/* Notifications */}
-                <button className="btn btn-outline-secondary border-0 position-relative">
-                  <FiFileText size={18} />
-                  <Badge 
-                    bg="danger" 
-                    className="position-absolute top-0 start-100 translate-middle rounded-circle"
-                    style={{ fontSize: '0.6rem', padding: '2px 5px' }}
-                  >
-                    3
-                  </Badge>
-                </button>
-
+  
+                
                 {/* User Avatar */}
                 <div className="bg-primary bg-opacity-10 rounded-circle p-2">
                   <span className="text-primary fw-bold">AD</span>
