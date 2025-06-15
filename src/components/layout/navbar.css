@@ -1,0 +1,48 @@
+.nav-link-custom {
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.nav-link-custom:hover {
+  background-color: rgba(var(--bs-gray-100-rgb), 0.5) !important;
+  transform: translateY(-1px);
+}
+
+.nav-link-custom.active {
+  box-shadow: 0 2px 8px rgba(var(--bs-primary-rgb), 0.15);
+}
+
+/* Animation pour le sidebar mobile */
+.offcanvas-start {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Badge pulsing animation */
+.badge-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--bs-danger-rgb), 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--bs-danger-rgb), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--bs-danger-rgb), 0);
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 991.98px) {
+  .navbar-brand span {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .offcanvas {
+    width: 85% !important;
+  }
+}
